@@ -761,6 +761,9 @@ func (s *session) makeEHLOResponse() (response string) {
 	}
 
 	response += "250 ENHANCEDSTATUSCODES"
+
+	// Handle SMTPUTF8
+	response += "250 SMTPUTF8"
 	return
 }
 
